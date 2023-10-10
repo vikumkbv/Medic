@@ -18,7 +18,7 @@ public class ClientDate {
         fmt.format("%td/%tm/%ty", dt,dt,dt);
         return fmt;
     }
-//    public static void main(String[] args){
-//        System.out.println(getDate());
-//    }
+   public static void main(String[] args){
+       System.out.println(getDate());
+   }
 }
