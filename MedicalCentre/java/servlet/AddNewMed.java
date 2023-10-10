@@ -44,8 +44,8 @@ public class AddNewMed extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
             database db=new database();
-            db.setAutoCommit(false);
-            db.insert("medicine_gen_info", fld1,val1);
+            // db.setAutoCommit(false);
+            // db.insert("medicine_gen_info", fld1,val1);
             rs=db.executeQuery("select LAST_INSERT_ID();");
             while(rs.next())
                 genNameFk=rs.getInt(1);
