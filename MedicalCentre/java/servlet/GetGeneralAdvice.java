@@ -44,8 +44,8 @@ public class GetGeneralAdvice extends HttpServlet {
                 str=rs.getString("general_adv_txt");
             }
                String jsonString = JSONValue.toJSONString(str);
-               System.out.println(jsonString);
-               System.out.println(str);
+            //    System.out.println(jsonString);
+            //    System.out.println(str);
                 out.println(jsonString);
                 }catch(Exception e){
                     System.out.println("Error : "+e);
