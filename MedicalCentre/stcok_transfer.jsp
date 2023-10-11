@@ -29,7 +29,7 @@
 <%@include file="include/alwaysinclude.jsp" %>
 
 <div id="page_title">
-                       Central Stock to Substock Transfer
+                       Central Stock
 </div>
 <div id="page_body">
            <br>
