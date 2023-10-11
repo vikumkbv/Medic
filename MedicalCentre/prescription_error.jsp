@@ -16,7 +16,7 @@
             <tr>
                 <td align="center">
                     <p>
-                        Database Error!!!!!!!
+                        Database Update!!!!!!!
                 </td>
             </tr>
  </table>
