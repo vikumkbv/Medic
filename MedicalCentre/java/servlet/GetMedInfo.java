@@ -66,8 +66,8 @@ public class GetMedInfo extends HttpServlet {
             //     jsar.add(toJSONObject(id, name));
             // }
                String jsonString = JSONValue.toJSONString(jsar);
-           //    System.out.println(jsonString);
-           //    System.out.println(jsar);
+              System.out.println(jsonString);
+              System.out.println(jsar);
                 out.println(jsonString);
                 }catch(Exception e){
                     out.println("Error : "+e);

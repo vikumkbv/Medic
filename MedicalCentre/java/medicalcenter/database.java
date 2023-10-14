@@ -99,17 +99,17 @@ public class database {
             fld = "( "+fld+" ) ";
 
         String query = "insert into "+tbl+fld+" values ("+values+")";
-        //System.out.println("h= "+query);
+        System.out.println("h= "+query);
         st = con.createStatement();
         st.execute(query);
-       // st.execute("");
-        //n = LAST_INSERT_ID();
+       st.execute("");
+        n = LAST_INSERT_ID();
         return ;
     }
     //My code
     public void insert(String tbl, String[] fld, String[] values) throws SQLException
     {
-        //System.out.println("dshf ksdfk");
+        System.out.println("dshf ksdfk");
        String temp1="",temp2="";
        temp1+=fld[0];
        temp2+=values[0];
