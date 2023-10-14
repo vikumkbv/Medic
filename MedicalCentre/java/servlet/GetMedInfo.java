@@ -56,15 +56,15 @@ public class GetMedInfo extends HttpServlet {
             JSONArray jsar=new JSONArray();
             database db=new database();
                rs=db.executeQuery(sql);
-            while(rs.next()){
-                id=rs.getInt("med_com_name_pk");
-                temp=rs.getInt("med_weight");
-                if(temp==0)
-                    name=rs.getString("med_com_name");
-                else
-                    name=rs.getString("med_com_name")+ "  ("+rs.getInt("med_weight")+ " mg)";
-                jsar.add(toJSONObject(id, name));
-            }
+            // while(rs.next()){
+            //     id=rs.getInt("med_com_name_pk");
+            //     temp=rs.getInt("med_weight");
+            //     if(temp==0)
+            //         name=rs.getString("med_com_name");
+            //     else
+            //         name=rs.getString("med_com_name")+ "  ("+rs.getInt("med_weight")+ " mg)";
+            //     jsar.add(toJSONObject(id, name));
+            // }
                String jsonString = JSONValue.toJSONString(jsar);
            //    System.out.println(jsonString);
            //    System.out.println(jsar);
