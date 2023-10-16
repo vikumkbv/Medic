@@ -45,16 +45,17 @@ public class StockLedgerEntry {
             return rs;
         }
 
-        // public ResultSet getCentralStocInfo(String viewName){
-        //     query="select * from "+viewName;
-        //     try{
-        //     database db=new database();
-        //     rs=db.executeQuery(query);
-        //     }catch(Exception e){
+        public ResultSet getCentralStocInfo(String viewName){
+            query="select * from "+viewName;
+            try{
+            database db=new database();
+            rs=db.executeQuery(query);
+            }catch(Exception e){
 
-        //         }
-        //     return rs;
-        // }
+                }
+            return rs;
+        }
+        
         public ResultSet getUserProfile(String userPk){
             query="SELECT full_name,employee_code,designation_name,dept_name,sex"+
 " FROM employee,employee_personal_info,employee_status,designation,department"+
